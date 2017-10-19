@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--响应式-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人简历</title>
+		<!--图标-->
+		<link rel="icon" href="img/title.ico" type="image/x-icon" />
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/index.css">
+
+		
+	</head>
+
+	<body>
+	<!--TODO页面的字体根据情况进行更换-->
+	<!--TODO整体网页的内容显示逐渐显现(通过不同的动态效果跳跃，翻转等)-->
+
+        <!--home-->
+		<div id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Personal resume</h2>
+						<h1>个人简历</h1>
+						<!--TODO兴趣爱好部分内容分别闪现出现-->
+						<h3 id="words">兴趣爱好&amp;InterestsAndHobbies</h3>
+						<p>性格特点:喜欢安静的环境，学习能力强，比较内向，有上进心和明确的职业目标。<br />
+						PersonalityTraits:Prefer a quiet environment,Strong learning ability,More introverted,Have an ambitious and clear career goal.</p>
+						<!--TODO点击这个按钮向下缓慢移动到第一部分-->
+						<a class="btn btn-default" role="group" id="go">开始了解<br>Understand me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end home-->
+		
+		<!--第一部分 个人信息-->
+		<div id="part-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/photo.jpg" class="img-responsive img-circle" alt="本人照片">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h1>web前端&amp;Web front end</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<table class="table">
+							<tr>
+								<td>姓名</td>
+								<td>张帅</td>
+							</tr>
+							<tr>
+								<td>性别</td>
+								<td>男</td>
+							</tr>
+							<tr>
+								<td>出生日期</td>
+								<td>1995.01.26</td>
+							</tr>
+							<tr>
+								<td>学历</td>
+								<td>本科14级</td>
+							</tr>
+							<tr>
+								<td>毕业院校</td>
+								<td>河南工业大学</td>
+							</tr>
+							<tr>
+								<td>专业</td>
+								<td>计算机科学与技术</td>
+							</tr>
+							<tr>
+								<td>期望工作地</td>
+								<td>北京</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<table class="table">
+							<tr>
+								<td>Name</td>
+								<td>Zhang Shuai</td>
+							</tr>
+							<tr>
+								<td>Sex</td>
+								<td>male</td>
+							</tr>
+							<tr>
+								<td>Date of birth</td>
+								<td>1995.01.26</td>
+							</tr>
+							<tr>
+								<td>Educational background</td>
+								<td>Undergraduate level 14</td>
+							</tr>
+							<tr>
+								<td>Graduate School</td>
+								<td>Henan university of technology</td>
+							</tr>
+							<tr>
+								<td>Majors</td>
+								<td>Computer science and technology</td>
+							</tr>
+							<tr>
+								<td>Desired working place</td>
+								<td>Beijing</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--第一部分 end-->
+		
+		<!--第二部分 专业技能-->
+		<div id="part-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<!--aside是h5新增标签IE8-不支持-->
+						<aside> 
+							<h1>自我评价&amp;Whan can I do</h1>
+							<p>
+								<span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+								  大三始自学web前端相关知识，可独立进行网页的开发工作，也会积极学习实际工作中所需要的技术。
+								<abbr title="In the third year of college,Start learning about web front-end knowledge,
+									Now I can do web development independently,And I will also actively learn the skills needed for practical work.">
+									[翻译&amp;translation]
+								</abbr>
+							</p>
+							<p>
+								<span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+								  经过学习，已有部分实践成果。例如响应式学校官网制作练习，canvas动画制作练习，个人博客制作练习等等。
+								<abbr title="After learning,Some practices have been achieved.For example,Use responsive technology to make school official website,
+									Canvas animation production practice,Personal blog making exercises, etc.">
+									[翻译&amp;translation]
+								</abbr>
+							</p>
+							<p>
+								<span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+								  学习能力强，可以静下心学习新知识，熟练使用web前端开发软件的基本功能。
+								<abbr title="Strong learning ability,I can learn by being quiet,Familiar with the basic functions of web front-end development software.">
+									[翻译&amp;translation]
+								</abbr>
+							</p>
+							<p>
+								<span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+								  对web前端感兴趣，愿意在这条路上一直走下去并且具有明确的职业目标。
+								<abbr title="Interested in the web front end,Be willing to go down this road,And have clear career goals.">
+									[翻译&amp;translation]
+								</abbr>
+							</p>
+						</aside>
+					</div>
+					<div class="col-md-6 ability">
+						<!--进度条功能(Bootstrap 进度条使用 CSS3 过渡和动画来获得该效果。
+						Internet Explorer 9 及之前的版本和旧版的 Firefox 不支持该特性，Opera 12 不支持动画)-->
+						<p>HTML、CSS</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 90%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="90" role="progressbar"> 90% </div>
+						</div>
+						<p>Javascript、Bootstrap</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 75%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="75" role="progressbar"> 75% </div>
+						</div>
+						<p>jQuery、H5、CSS3</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 70%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="70" role="progressbar"> 70% </div>
+						</div>
+						<p>Hbuilder、Dreamweaver</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 65%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="65" role="progressbar"> 65% </div>
+						</div>
+						<p>The Chinese language</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 101%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="101" role="progressbar"> 101% </div>
+						</div>
+						<p>English</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 60%;" aria-valuemin="0" aria-valuemax="100" 
+								aria-valuenow="60" role="progressbar"> 60% </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--第二部分 end-->
+		
+		<!--第三部分 展示-->
+		<div id="part-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>部分作品展示&amp;SHOWCASING</h1>
+					</div>
+				</div>
+				<!--TODO这里的图片除了第一个之外，其他的做成相册样式切换并带过渡转换效果-->
+				<div class="row">
+					<div class="col-md-4">
+						<a href="https://github.com/noviceZ" target="_blank" class="thumbnail">
+							<img src="img/github yuan.png" alt="个人github" class="img-responsive">
+							<div class="imgafter">
+								<h4>个人github网站</h4>
+								<h5>https://github.com/noviceZ</h5>									
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a class="thumbnail img-click">
+							<img src="img/boke yuan.png" alt="个人博客编写练习" class="img-responsive" id="0">
+							<div class="imgafter">
+								<h4>个人博客编写练习</h4>
+								<h5>2017.2.25</h5>									
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a class="thumbnail img-click">
+							<img src="img/hao123 yuan.png" alt="hao360网站编写练习" class="img-responsive" id="1">
+							<div class="imgafter">
+								<h4>hao360网站编写练习</h4>
+								<h5>2016.11.18</h5>									
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a class="thumbnail img-click">
+							<img src="img/gongda yuan.png" alt="学校官网编写练习" class="img-responsive" id="2">
+							<div class="imgafter">
+								<h4>学校官网编写练习</h4>
+								<h5>2017.3.12/2017.8.23(响应式重排版)</h5>									
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a class="thumbnail img-click">
+							<img src="img/bootstrap yuan.png" alt="bootstrap官网编写练习(响应式)" class="img-responsive" id="3">
+							<div class="imgafter">
+								<h4>bootstrap官网编写练习(响应式)</h4>
+								<h5>2017.8.4</h5>									
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a class="thumbnail img-click">
+							<img src="img/denglu yuan.png" alt="媒体查询登录界面编写练习" class="img-responsive" id="4">
+							<div class="imgafter">
+								<h4>媒体查询登录界面编写练习</h4>
+								<h5>2017.3.21</h5>		
+								<br />
+								<h5>在此展示部分作品</h5>
+								<br />
+								<h5>未来、还有更多...</h5>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--图片弹窗-->
+			<div id="popover" class="popover-before">
+				<div class="container">
+					<!--定义关闭按钮-->
+					<span class="glyphicon glyphicon-remove" id="close"></span>
+					<!--定义左右切换箭头-->
+					<span class="glyphicon glyphicon-menu-left" id="left"></span>
+					<span class="glyphicon glyphicon-menu-right" id="right"></span>
+					<!--需要添加src alt属性-->
+					<img class="img-responsive img-rounded" id="popid">
+				</div>
+			</div>
+		</div>
+		<!--第三部分 end-->
+		
+		<!--第四部分-->
+		<div id="part-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 contact">
+						<h3>联系我&amp;CONTACT ME</h3>
+						<p>
+							<span class="glyphicon glyphicon-phone"></span>
+							132-2306-6962
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-user"></span>
+							<a href="tencent://message/?uin=653312280&Site=QQ交谈&Menu=yes">与我交谈&amp;Talk to me</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span>
+							<a href="mailto:youxiang@163.com?subject=给你写信">653312280@qq.com</a>
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-map-marker"></span>
+							河南工业大学莲花街校区<br />
+						</p>
+					</div>
+					<div class="col-md-6">
+						<!--post提示内部服务器错误,因为要向服务器传递数据(但是这个程序没有内部服务器),
+						get是从服务器上获取数据(这里返回网页顶部)-->
+						<form id="form" role="form" action="#" method="get">
+							<input id="name" class="form-control" name="name" type="text" placeholder="Your Name" />
+							<input id="email" class="form-control" name="email" type="text" placeholder="Your Email" />
+							<textarea id="suggestion" class="form-control" name="suggestion" rows="5" placeholder="Your suggestion"></textarea>
+							<input id="send" class="form-control" name="send" type="submit" value="SEND ME" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--第四部分 end-->
+		
+		<!--第五部分-->
+		<div id="part-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Made in October 2017 ©</p>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--第五部分 end-->
+
+		<script src="js/index.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+	</body>
+
+</html>
